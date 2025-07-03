@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/info.css">
+    <script type="module" src="../../scripts/info.js" defer></script>
+    <title>Info</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main_nav">
+        <a href="./home.html" class="main_nav_link active_link">
+            <img src="https://storage.googleapis.com/replit/images/1673028800652_16b5d920d5a39975e2d7465b5d0e85fe.jpeg" alt="Home" class="main_nav_icon" />
+        </a>
+        <a href="./info.html" class="main_nav_link">
+            <img src="https://png.pngtree.com/png-vector/20221002/ourmid/pngtree-vector-informations-icon-site-insignia-isolated-vector-png-image_14905386.jpg" alt="Info" class="main_nav_icon" />
+        </a>
+        <a href="./signin.html" class="main_nav_link">
+            <img src="https://www.clipartmax.com/png/middle/119-1198492_green-logout-icon-logout-icon-png-red.png" alt="Logout" class="main_nav_icon" />
+        </a>
+    </nav>
+    
+    <main class="main">
+        <div class="main_auth_error">
+            <p class="main_auth_error_message">You are not a authenticated user</p>
+            <a href="./signup.html" class="main_auth_error_link">create account</a>
+        </div>
+        <div class="main_banner">
+            <div class="main_banner_header">
+                <h2 class="main_banner_header_text">Welcome, username</h2>
+            </div>
+            <p class="main_banner_text">Create an account and start budgetting today.</p>
+        </div>
+        <section class="main_links">
+            <p class="main_links_link income" style="color:white">Income</p>
+            <p class="main_links_link expenses" style="color:white">Expenses</p>
+            <p class="main_links_link budget" style="color:white">Budget</p>
+            <p class="main_links_link add" style="color:white">Add</p>
+        </section>
+        <section class="main_income">
+            <div class="main_empty">
+                <div class="main_empty_container">
+                    <?xml version="1.0" encoding="utf-8"?>
+
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg height="100%" width="100%" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 512 512"  xml:space="preserve">
+                    <style type="text/css">
+                        .st0{fill:#000000;}
+                    </style>
+                    <g>
+                        <path class="st0" d="M383.03,176.725C367.246,232.018,316.365,272.52,256,272.52s-111.237-40.502-127.03-95.795H0v158.55h512
+                            v-158.55H383.03z"/>
+                    </g>
+                    </svg>
+                </div>
+                <p class="main_empty_text">Add income on the add tab.</p>
+            </div>
+        </section>
+        <section class="main_expenses">
+            <div class="main_empty">
+                <div class="main_empty_container">
+                    <?xml version="1.0" encoding="utf-8"?>
+
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg height="100%" width="100%" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 512 512"  xml:space="preserve">
+                    <style type="text/css">
+                        .st0{fill:#000000;}
+                    </style>
+                    <g>
+                        <path class="st0" d="M383.03,176.725C367.246,232.018,316.365,272.52,256,272.52s-111.237-40.502-127.03-95.795H0v158.55h512
+                            v-158.55H383.03z"/>
+                    </g>
+                    </svg>
+                </div>
+                <p class="main_empty_text">Add expense on the add tab.</p>
+            </div>
+        </section>
+        <section class="main_budget">
+            <h4 class="main_budget_title">Update your budget</h4>
+            <input class="main_budget_input" type="number" placeholder="Enter your budget here" />
+            <p class="main_budget_error"></p>
+            <button class="main_budget_button">Update</button>
+        </section>
+        <section class="main_add">
+            <h4 class="main_add_title">Add income or expense</h4>
+            <div class="main_add_select_container">
+                <div class="main_add_select">
+                    <p class="main_add_select_text">Choose type...</p>
+                    <p class="main_add_select_icon">select</p>
+                </div>
+                <div class="main_add_options">
+                    <div class="main_add_option">
+                        <span class="main_add_option_text">Income</span>
+                    </div>
+                    <div class="main_add_option">
+                        <span class="main_add_option_text">Expense</span>
+                    </div>
+                </div>
+            </div>
+            <div class="main_add_expense_select_container">
+                <div class="main_add_expense_select">
+                    <p class="main_add_expense_select_text">Choose expense type...</p>
+                    <p class="main_add_expense_select_icon">select</p>
+                </div>
+                <div class="main_add_expense_options">
+                    <div class="main_add_expense_option">
+                        <span class="main_add_expense_option_text">Food</span>
+                    </div>
+                    <div class="main_add_expense_option">
+                        <span class="main_add_expense_option_text">Entertainment</span>
+                    </div>
+                    <div class="main_add_expense_option">
+                        <span class="main_add_expense_option_text">Clothing</span>
+                    </div>
+                    <div class="main_add_expense_option">
+                        <span class="main_add_expense_option_text">Rent</span>
+                    </div>
+                    <div class="main_add_expense_option">
+                        <span class="main_add_expense_option_text">Water</span>
+                    </div>
+                    <div class="main_add_expense_option">
+                        <span class="main_add_expense_option_text">Electricity</span>
+                    </div>
+                </div>
+            </div>
+            <input class="main_add_input" type="number" placeholder="Enter amount" />
+            <p class="main_add_error"></p>
+            <button class="main_add_button">Add</button>
+        </section>
+    </main>
+</body>
+</html>

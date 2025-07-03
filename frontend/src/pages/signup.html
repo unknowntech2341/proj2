@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/signup.css">
+	<script type="module" src="../../scripts/signup.js" defer></script>
+    <title>Sign Up</title>
+</head>
+<body>
+	<section class="main_container">
+		<div class="logo_container">
+			<img src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png" alt="Login Icon" width="60" height="60">
+
+		</div>
+		</div>
+		<h1 class="account_heading">Create account</h1>
+		<form class="account_form">
+			<input 
+				type="text"
+				placeholder="Enter your name..." 
+				class="account_form_input name"
+				required
+			/>
+			<input 
+				type="email"
+				placeholder="Enter your email..." 
+				class="account_form_input email"
+				required
+			/>
+			<input 
+				type="password"
+				placeholder="Enter your password..." 
+				class="account_form_input password"
+				required
+			/>
+			<input 
+				type="password"
+				placeholder="Confirm your password..." 
+				class="account_form_input confirm"
+				required
+			/>
+		</form>
+		<p class="error_message"></p>
+		<button class="submit_form">Create account</button>
+		<footer class="account_footer">
+			<p class="account_footer_text">Already have an account?</p>
+			<a href="./signin.html" class="account_footer_click">Login</a>
+		</footer>
+	</section>
+</body>
+</html>

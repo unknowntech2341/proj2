@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/home.css">
+    <script type="module" src="../../scripts/home.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Home</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main_nav">
+        <a href="./home.html" class="main_nav_link active_link">
+            <img src="https://storage.googleapis.com/replit/images/1673028800652_16b5d920d5a39975e2d7465b5d0e85fe.jpeg" alt="Home" class="main_nav_icon" />
+        </a>
+        <a href="./info.html" class="main_nav_link">
+            <img src="https://png.pngtree.com/png-vector/20221002/ourmid/pngtree-vector-informations-icon-site-insignia-isolated-vector-png-image_14905386.jpg" alt="Info" class="main_nav_icon" />
+        </a>
+        <a href="./signin.html" class="main_nav_link">
+            <img src="https://www.clipartmax.com/png/middle/119-1198492_green-logout-icon-logout-icon-png-red.png" alt="Logout" class="main_nav_icon" />
+        </a>
+    </nav>
+    
+    <main class="main">
+        <!-- <div class="main_auth_error">
+            <p class="main_auth_error_message">You are not a authenticated user</p>
+            <a href="./signup.html" class="main_auth_error_link">create account</a>
+        </div> -->
+        <div class="main_banner">
+            <div class="main_banner_header">
+                <h2 class="main_banner_header_text">Welcome, username</h2>
+            </div>
+            <p class="main_banner_text">Create an account and start budgetting today.</p>
+        </div>
+        <div class="main_auth_error">
+            <p class="main_auth_error_message">You are not a authenticated user</p>
+            <a href="./signup.html" class="main_auth_error_link">create account</a>
+        </div>
+        <section class="main_account">
+            <h2 class="main_account_title">ACCOUNT</h2>
+            <div class="main_account_container">
+                <p class="main_account_container_text">Income</p>
+                <p class="main_account_container_income">R0</p>
+            </div>
+            <div class="main_account_container">
+                <p class="main_account_container_text">Expenses</p>
+                <p class="main_account_container_expense">R0</p>
+            </div>
+        </section>
+        <section class="main_budget">
+            <div class="main_budget_container">
+                <h1 class="main_budget_container_title">BUDGET</h1>
+                <p class="main_budget_container_month">R0</p>
+            </div>
+            <div class="main_budget_content">
+                <div class="main_budget_content_graph">
+                    <div class="main_budget_content_graph_indicator"></div>
+                </div>
+            </div>
+        </section>
+        <section class="main_spendings">
+            <h1 class="main_spendings_title">SPENDINGS</h1>
+            <div class="main_spendings_container">
+                <canvas class="main_spendings_container_data">
+                </canvas>
+                <div class="main_spendings_container_content">
+                    <div class="main_spendings_container_content_item">
+                        <div class="main_spendings_container_content_item_indicator food"></div>
+                        <p class="main_spendings_container_content_item_text">Fees</p>
+                    </div>
+                    <div class="main_spendings_container_content_item">
+                        <div class="main_spendings_container_content_item_indicator entertainment"></div>
+                        <p class="main_spendings_container_content_item_text">Entertainment</p>
+                    </div>
+                    <div class="main_spendings_container_content_item">
+                        <div class="main_spendings_container_content_item_indicator clothing"></div>
+                        <p class="main_spendings_container_content_item_text">Clothing</p>
+                    </div>
+                    <div class="main_spendings_container_content_item">
+                        <div class="main_spendings_container_content_item_indicator rent"></div>
+                        <p class="main_spendings_container_content_item_text">Rent</p>
+                    </div>
+                    <div class="main_spendings_container_content_item">
+                        <div class="main_spendings_container_content_item_indicator water"></div>
+                        <p class="main_spendings_container_content_item_text">Water</p>
+                    </div>
+                    <div class="main_spendings_container_content_item">
+                        <div class="main_spendings_container_content_item_indicator electricity"></div>
+                        <p class="main_spendings_container_content_item_text">Electricity</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="account_advice">
+            <h1 class="account_advice_title">ADVICE</h1>
+            <p class="account_advice_text">The time to start saving and analysing how you spend your money is now. Nobody is going to do it for you.</p>
+        </section>
+    </main>
+</body>
+</html>
