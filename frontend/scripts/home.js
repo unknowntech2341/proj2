@@ -75,6 +75,7 @@ database.fetchData(`users/${userID}`).then(res => {
     return;
   }
 
+  
   // User found
   errorBanner.style.display = "none";
   greetText.innerText = `Welcome, ${res?.data.name.toLowerCase()}`;

@@ -56,7 +56,7 @@ submitButton.addEventListener("click", async (e) => {
     const database = new Database("http://localhost:5000")
     database.postData("users/create", userInfo).then((res) => {
         localStorage.setItem("userID", JSON.stringify(res?.user._id))
-        window.location.href = "http://127.0.0.1:5500/frontend/src/pages/home.html"
+        window.location.href = "http://127.0.0.1:5500/frontend/src/home.html"
     }).catch(() => {
         errorMessage.innerText = "Server error, please try again"
         return

@@ -43,7 +43,7 @@ submitButton.addEventListener("click", async (e) => {
         } else {
             errorMessage.innerText = "";
             localStorage.setItem("userID", JSON.stringify(dataArray[0]?._id))
-            window.location.href = "http://127.0.0.1:5500/frontend/src/pages/home.html"
+            window.location.href = "http://127.0.0.1:5500/frontend/src/home.html"
         }
     }).catch(() => {
         errorMessage.innerText = "Server error, please try again"
